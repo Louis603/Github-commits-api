@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'welcome#index'
   get 'getProject/:owner/:repo', to: 'projects#getProject'
-  
+  get 'projects/:proj/:user', to: 'projects#showUser'
   resources :commits
   resources :contributors
   resources :projects
