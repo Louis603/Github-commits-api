@@ -9,7 +9,7 @@ the rails project has already been scraped first as a test after a database rese
     2) run "rails db:migrate" to establish the three models
     3) run "rails s" in console to run the server
     4) The app needs to manually fetch from githuub first in order to see the data
-    # hit the endpoint "example http://localhost:3000/getProject?owner=rails&repo=rails"  of the project you want to seed into the DB
+    hit the endpoint "example http://localhost:3000/getProject?owner=rails&repo=rails"  of the project you want to seed into the DB
     owner = "owner name"
     repo = "repo name"
     5) running db endpoints
@@ -31,24 +31,10 @@ the rails project has already been scraped first as a test after a database rese
     end
 
     
-* Configuration
 
-* Database creation
-    # 3 models 
+* # Database creation
+    3 models 
     project
     contributor
     commit (join table for many to many)
 
-* Database initialization
-    rails db:migrate
-* How to run the test suite
-    run "rails db:migrate" to establish the three models
-    run "rails s" in console to run the server
-    # hit the endpoint "example http://localhost:3000/getProject?owner=rails&repo=rails"  of the project you want to seed into the DB
-    owner = "owner name"
-    repo = "repo name"
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
