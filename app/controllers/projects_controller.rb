@@ -42,7 +42,7 @@ class ProjectsController < ApplicationController
 
     
     def index
-        projects = Project.all
+        projects = Project.all.pluck(:id, :name)
         # render json: projects, serializer: OnlyProjectsSerializer
         render json: projects
     end

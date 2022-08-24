@@ -1,4 +1,19 @@
-<h2>Hello World</h2>
+<h3>
+  The app needs to manually fetch from github first in order to see the data
+    <li>hit the endpoint of the  project you want to seed into the DB example 
+    <li>"http://localhost:3000/getProject?owner=rails&repo=rails" or </li>
+    <li>"https://serene-badlands-76492.herokuapp.com/getProject?owner=rails&repo=rails" </li>
+    </li>
+  <li>owner = "owner name"</li>
+  <li>repo = "repo name"</li>
+</h3>
+
+<h3>
+  running db endpoints
+  <li>"/projects" show all of the projects and id</li>
+  <li>"/projects/{projectID}" shows individual project with contributions and contributors</li>
+  <li>"projects/{projectID}/{contributorID}" shows user, total commits, what theyve worked on recently and their commits</li>
+</h3>
 <p>
   The time is now: <%= Time.now %>
 </p>
