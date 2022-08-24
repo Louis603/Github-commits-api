@@ -1,5 +1,5 @@
 class ProjectSerializer < ActiveModel::Serializer
-  attributes :id, :name, :contributors, :contributions
+  attributes :id, :name, :contributions, :contributors
 
   #making sure of no duplicate users as project.contributors is from all commits
   #without uniq it was showing repeats of users related to commits if the had several commits
