@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
-  get 'getProject/:owner/:repo', to: 'projects#getProject'
+  # Had to switch to using params this way because nodejs.org plugged into the repo params would show up as nodejs when the repo name actually ends with an .org
+  get 'getProject', to: 'projects#getProject'
+  # get 'getProject/:owner/:repo', to: 'projects#getProject'
   get 'projects/:proj/:user', to: 'projects#showUser'
+  root 'welcome#index'
   resources :commits
   resources :contributors
   resources :projects
