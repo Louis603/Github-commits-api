@@ -30,6 +30,7 @@ Things you may want to cover:
 * Database initialization
     rails db:migrate
 * How to run the test suite
+    run "rails db:migrate" to establish the three models
     run "rails s" in console to run the server
     hit the endpoint of "localhost:3000/getProject/:owner/:repo" of the project you want to seed into the DB
 * Services (job queues, cache servers, search engines, etc.)

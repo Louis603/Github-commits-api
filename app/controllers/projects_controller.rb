@@ -1,6 +1,5 @@
 class ProjectsController < ApplicationController
     def getProject
-
         #Get project data
         projResp = HTTParty.get("https://api.github.com/repos/#{params[:owner]}/#{params[:repo]}")
         #using find or create by to notstore duplicates of the same project
@@ -17,7 +16,7 @@ class ProjectsController < ApplicationController
                 sha: commitResp["sha"], 
                 additions: commitResp["stats"]["additions"], 
                 deletions: commitResp["stats"]["deletions"],
-                date: commitResp["commit"]["author"]["date"],
+                date: commitResp["commit"]["commiter"]["date"],
                 project: proj
             )
         }
