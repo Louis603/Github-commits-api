@@ -1,6 +1,7 @@
 # README
-To be totally honest I spent way more than 4 hours on this. As I ran into small problems here and there.And accessing the github api alone was a learning curve for me. Not sure if scraping data first would have been the best way but I really learned a lot from this take home. I've never fetched data in this way as I'm used to sending data from the frontend to the back or just using an api on its own. This has really taught me I have a lot to learn. Thank you!
+A rails api project taking in the last 100 commits from a github repo with info on contributors and line changes.
 
+Hosted on Heroku
 https://serene-badlands-76492.herokuapp.com/
 the rails project has already been scraped first as a test after a database reset
 
