@@ -38,3 +38,5 @@ the rails project has already been scraped first as a test after a database rese
     contributor,
     commits (join table for many to many)
 
+![Getting Started](/app/assets/images/rails-api-img-1.jpeg)
+![Getting Started](/app/assets/images/rails-api-img-2.jpeg)
