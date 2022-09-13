@@ -34,7 +34,7 @@ the rails project has already been scraped first as a test after a database rese
 
 * # Database creation
     3 models 
-    project
-    contributor
-    commit (join table for many to many)
+    project,
+    contributor,
+    commits (join table for many to many)
 
